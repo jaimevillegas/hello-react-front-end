@@ -1,12 +1,15 @@
 import React from 'react';
 import Greeting from './components/Greeting';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hello React! - Front End</h1>
-      <Greeting />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/greeting" element={<Greeting />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
