@@ -14,9 +14,15 @@ const Greeting = () => {
   return (
     <div>
       {error ? (
-        <h1>Error: {error}</h1>
+        <h1>
+          Error:
+          {error}
+        </h1>
       ) : (
-        <h1>Greeting: {greeting}</h1>
+        <h1>
+          Greeting:
+          {greeting}
+        </h1>
       )}
     </div>
   );
